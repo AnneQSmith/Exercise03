@@ -1,11 +1,20 @@
-def add(num1, num2):
-    return (num1+num2)
+
+# 
+
+def add(arglist):
+    sum = 0
+    for i in range(len(arglist)):
+        sum += arglist[i]
+    return (sum)
 
 def subtract(num1, num2):
     return(num1-num2)
 
-def multiply(num1, num2):
-    return(num1*num2)
+def multiply(arglist):
+    prod = 1
+    for i in range(len(arglist)):
+        prod *= arglist[i]
+    return(prod)
 
 def divide(num1, num2):
     fl_num1 = float(num1)
